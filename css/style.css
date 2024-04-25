@@ -6,6 +6,7 @@
 }
 body {
   background-color: #181419;
+  height: 80vh;
 }
 :link {
   color: white;
@@ -46,12 +47,14 @@ hr {
 }
 /* ESCRITORIO */
 
-.header {
+header {
   background-color: #9f3647;
   color: #ffffff;
   height: 10vh;
-  position: sticky;
+  position:fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 10;
 }
 
@@ -60,7 +63,7 @@ hr {
   background-color: #9f3647;
   display: flex;
   justify-content: space-between;
-  padding: 0.5rem;
+  padding: 0px;
   margin: 0px;
   font-weight: 700;
   font-size: 1.5rem;
@@ -72,6 +75,7 @@ hr {
   font-weight: 700;
   font-size: 1.2rem;
   margin-left: 2rem;
+  color: #ffffff;
 
   &:hover {
     animation: move-shaking 0.25s infinite;
@@ -104,7 +108,7 @@ color: #ffffff;
 }
 
 .inicio {
-  margin: auto;
+  margin: 1rem;
   padding: 0.5rem;
   font-weight: 500;
   font-size: 1.2rem;
@@ -127,15 +131,14 @@ color: #ffffff;
   }
 
   .naveg {
-    margin-left: 10px;
-    margin-right: 10px;
     flex-direction: column;
-    row-gap: 20px;
+    row-gap: 2rem;
   }
 
   .logo {
     font-size: 1.2rem;
     font-weight: 700;
+    margin-top: 1rem;
   }
 
   .container {
@@ -148,14 +151,14 @@ color: #ffffff;
 }
 
 /*ESCRITORIO*/
-
 .footer {
   background-color: #9f3647;
   text-decoration: none;
-  position: fixed;
+   position: relative; 
   bottom: 0;
   width: 100%;
-  height: 15vh;
+  /* height: 100%; */
+  height: 10vh;
   z-index: 10;
   display: flex;
   justify-content: center;
@@ -164,21 +167,22 @@ color: #ffffff;
 .navega {
   display: flex;
   align-items: center;
+  justify-content: center;
   left: 0;
   bottom: 0;
+  height: 10rem;
   width: 100%;
+  background-color: #9F3647;
 }
-
 .container2 {
   display: inline-flex;
   align-items: center;
   font-weight: 700;
-  margin-left: 11rem;
+  
+  height: fit-content;
 }
 
-.item2 {
-  margin-left: 20px;
-}
+
 
 .linkitem {
   color: white;
