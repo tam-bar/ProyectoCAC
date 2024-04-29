@@ -145,7 +145,7 @@ a {
 .principal {
   .banner {
     height: 90vh;
-    background-image: url(/ProyectoCAC-master/assets/img/banner-bg.jpg);
+    background-image: url(/assets/img/banner-bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
