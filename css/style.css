@@ -4,18 +4,29 @@
   margin: 0;
   padding: 0;
 }
-
+html {
+  overflow-y: scroll; /* Permitir el scroll vertical */
+}
+::-webkit-scrollbar {
+  width: 10px; /* Ancho del scrollbar */
+}
+::-webkit-scrollbar-thumb {
+  background-color: #9f3647;
+}
+::-webkit-scrollbar-track {
+  background: rgb(23, 23, 23);
+}
 body {
   background-color: #181419;
   height: 80vh;
+  scrollbar-width: thin; /* Anchura del scrollbar en Firefox */
+  scrollbar-color: #9f3647 #f5f5f5; /* Color del thumb y track en Firefox */
 }
 
 :link {
   color: white;
   text-decoration: none;
 }
-
-
 
 @keyframes move-shaking {
   0% {
@@ -93,7 +104,6 @@ header {
 
   .navLink {
     color: #ffffff;
-
   }
 
   &:hover {
@@ -120,8 +130,8 @@ header {
   }
 }
 
-hr{
-  border:solid 1px #9F3647;
+hr {
+  border: solid 1px #9f3647;
   margin-bottom: 15vh;
 }
 
@@ -140,7 +150,6 @@ h2 {
 a {
   color: white;
 }
-
 
 .principal {
   .banner {
@@ -173,12 +182,7 @@ a {
         box-shadow: 0 0 15px #ffffff83;
       }
     }
-
-
-
   }
-
-
 }
 
 .buscador {
@@ -221,7 +225,6 @@ a {
     }
   }
 }
-
 
 /* TELEFONO/TABLET */
 
@@ -272,7 +275,7 @@ a {
   bottom: 0;
   height: 10rem;
   width: 100%;
-  background-color: #9F3647;
+  background-color: #9f3647;
 }
 
 .container2 {
@@ -281,8 +284,6 @@ a {
   font-weight: 700;
   height: fit-content;
 }
-
-
 
 .linkitem {
   color: white;
@@ -325,7 +326,6 @@ a {
   .inicio {
     padding: 0.5rem 0.8rem;
   }
-
 }
 
 /*TENDENCIAS*/
@@ -469,7 +469,6 @@ tituloPelicula
     margin-bottom: 50px;
     color: #ffffff;
   }
-
 }
 
 .imagenesAclamadas {
@@ -481,11 +480,10 @@ tituloPelicula
   text-align: center;
   margin-top: 10px;
   margin-bottom: 60px;
-
 }
 
 .imagenesAclamadas img {
- display: flex;
+  display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
   border-radius: 25px;
@@ -496,5 +494,4 @@ tituloPelicula
   margin-left: 30px;
   margin-bottom: 20px;
   justify-content: space-between;
-
 }
