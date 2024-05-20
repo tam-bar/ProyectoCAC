@@ -26,23 +26,29 @@
             <h2>Registro</h2>
         </div>
         <div class="formulario">
-            <form action="" method="post">
-                <label for="nombre"></label>
-                <input class="nombre" type="nombre" name="nombre" placeholder="Nombre">
+            <form id="formularioregistro" method="post">
+                <input class="nombre" type="text" name="nombre" id="nombre" placeholder="Nombre">
                 <br>
+                <span id="errornombre" class="error"></span>
                 <br>
-                <label for="apellido"></label>
-                <input class="apellido" type="apellido" name="apellido" id="apellido" placeholder="Apellido">
+                <input class="apellido" type="text" name="apellido" id="apellido" placeholder="Apellido">
                 <br>
+                <span id="errorapellido" class="error"></span>
                 <br>
-                <label for="hablar"></label>
-                <input class="email" type="email" name="email" id="email" placeholder="E-mail">
+                <input class="email" type="text" name="email" id="email" placeholder="E-mail">
                 <br>
+                <span id="erroremail" class="error"></span>
                 <br>
-                <input class="date" type="date" name="date">
+                <input class="contrasena" type="password" name="contrasena" id="contrasena" placeholder="Contraseña">
                 <br>
+                <span id="errorcontrasena" class="error"></span>
                 <br>
-                <select class="pais" name="pais">
+                <input class="date" type="date" name="date" id="date">
+                <br>
+                <span id="errorfecha" class="error"></span>
+                <br>
+                <select class="pais" name="pais" id="pais">
+                    <option value="">Pais</option>
                     <option value="AF">Afganistán</option>
                     <option value="AL">Albania</option>
                     <option value="DE">Alemania</option>
@@ -107,7 +113,7 @@
                     <option value="AE">Emiratos Árabes Unidos</option>
                     <option value="ER">Eritrea</option>
                     <option value="SI">Eslovenia</option>
-                    <option value="ES" selected>España</option>
+                    <option value="ES">España</option>
                     <option value="US">Estados Unidos</option>
                     <option value="EE">Estonia</option>
                     <option value="ET">Etiopía</option>
@@ -279,11 +285,13 @@
                     <option value="ZW">Zimbabue</option>
                 </select>
                 <br>
+                <span id="errorpais" class="error"></span>
                 <br>
                 <input type="checkbox" id="checkbox" value="checkbox"/>Acepto términos y condiciones
                 <br>
+                <span id="errorcheck" class="error"></span>
                 <br>
-                <input class="enviar" type="submit" value="Registrarse">
+                <input class="enviar" type="submit" value="Registrarse" id="submit">
             </form>
         </div>
         <div class="ayuda">
