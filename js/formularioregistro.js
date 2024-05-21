@@ -1,4 +1,4 @@
-document.getElementById("formularioregistro").addEventListener('submit', validar (evento));
+document.getElementById("formularioregistro").addEventListener('submit', validar);
 
 function validar(evento) {
     evento.preventDefault();
